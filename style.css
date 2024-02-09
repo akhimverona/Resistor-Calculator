@@ -3,20 +3,21 @@
     padding: 0;
 }
 
+
 .main{
     width: 100%;
-    background-color: #37343B;
+    background-color: #1B0B03;
     background-position: center;
     background-size: cover;
-    height: 100vh;
+    height: 100%;
 }
 
-.navbar{
-    width: 1200px;
-    height: 75px;
-    margin: auto;
-    background-image: linear-gradient(to bottom right, #1E1E1E, #0B0A11);
+.navbar {
+  width: 100%; 
+  height: 75px;
+  background-image: linear-gradient(to bottom right, #1E1E1E, #0B0A11);
 }
+
 
 .icon{
     width: 200px;
@@ -27,7 +28,7 @@
 .logo{
     color: #ff7200;
     font-size: 35px;
-    font-family: 'Lexend';
+    font-family: 'Poppins';
     padding-left: 20px;
     float: left;
     padding-top: 10px;
@@ -45,7 +46,7 @@ ul{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Lexend';
+    font-family: 'Poppins';
     color: #FFFFFF;
 }
 
@@ -54,17 +55,17 @@ ul li{
     margin-left: 62px;
     margin-top: 27px;
     font-size: 14px;
-    font-family: 'Lexend';
+    font-family: 'Poppins';
     color: #FFFFFF;
 }
 
 ul li a{
     text-decoration: none;
     color: #fff;
-    font-family: Arial;
+    font-family: "Poppins" ;
     font-weight: bold;
     transition: 0.4s ease-in-out;
-    font-family: 'Lexend';
+    font-family: 'Poppins';
     color: #FFFFFF;
 }
 
@@ -79,7 +80,7 @@ ul li a:hover{
 }
 
 .srch{
-    font-family: 'Lexend';
+    font-family: 'Poppins';
     width: 200px;
     height: 40px;
     background: transparent;
@@ -121,12 +122,38 @@ ul li a:hover{
     outline: none;
 }
 
+.hero-section {
+  position: relative;
+  width: 100vw; 
+  height: 100vh; 
+  overflow: hidden;
+}
+
+.hero-section img {
+  width: 100vw; 
+  height: 100vh; 
+  object-fit: cover; 
+}
+
+
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #0B0A11; /* Adjust text color as needed */
+  /* Add other styling properties for your hero content */
+}
+
+
+
 .content{
-    width: 1200px;
+    width: 100%;
     height: auto;
     margin: auto;
     color: #fff;
     position: relative;
+    font-size: 23px;
 }
 
 .content .par{
@@ -139,8 +166,9 @@ ul li a:hover{
 }
 
 .content h1{
-    font-family: 'Lexend';
-    font-size: 50px;
+    font-family: 'Poppins';
+    font-weight:900;
+    font-size: 180px;
     padding-left: 20px;
     margin-top: 9%;
     letter-spacing: 2px;
@@ -164,23 +192,34 @@ ul li a:hover{
 
 .container {
   padding: 2rem;
-  background-color: #0B0A11;
+  background-color: #0C0A1C;
   border-radius: 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  max-width: 80%; /* Set to 50% for approximately half the size of the webpage */
+  margin: 0 auto; /* Add auto margin to center horizontally */
+}
+
+.container2 {
+  width: 60%; /* Set the desired width for the container */
+  margin: 20px 0; /* Center the container and add some top margin */
+  background-color: #0B0A11;
+  padding: 2rem;
+  
 }
 
 .nav-links {
     display: flex;
     align-items: flex-start;
     justify-content: flex-start; /* Align to the left */
-    background: #0B0A11;
+    background: #1B0B03;
     padding: 10px; /* Adjusted padding */
     border-radius: 12px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-    width: 100%; /* Make it 100% width of the container */
+    width: 60%; /* Make it 100% width of the container */
+    margin: 0;
 }
 
 .nav-links li {
@@ -279,22 +318,25 @@ ul li a:hover{
   transform-origin: left;
 }
 
-h3{
+h3 {
   font-family: 'Poppins';
   font-size: 25px;
   font-weight: bold;
   margin-top: 3%;
   letter-spacing: 2px;
   text-align: center;
+  color: #E0DFE9; /* Add your desired color */
 }
 
-h4{
+h4 {
   font-family: 'Poppins';
   font-size: 18px;
   margin-top: 1%;
   font-weight: lighter;
-  letter-spacing: 2px
+  letter-spacing: 2px;
+  color: #E0DFE9; /* Add your desired color */
 }
+
 
 .dropdown {
   position: relative;
@@ -333,6 +375,7 @@ h4{
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
+  
 }
 
 .dropdown-content a {
@@ -353,33 +396,6 @@ h4{
 
 .dropdown:hover .dropbtn {
   background-color: #3e8e41;
-}
-
-.btn{
-display: inline-block;
-outline: 0;
-border: 0;
-cursor: pointer;
-transition: box-shadow 0.15s ease,transform 0.15s ease;
-will-change: box-shadow,transform;
-background: #FCFCFD;
-box-shadow: 0px 2px 4px rgb(45 35 66 / 40%), 0px 7px 13px -3px rgb(45 35 66 / 30%), inset 0px -3px 0px #d6d6e7;
-height: 48px;
-padding: 0 32px;
-font-size: 18px;
-border-radius: 6px;
-color: #36395a;
-transition: box-shadow 0.15s ease,transform 0.15s ease;
-}
-
-.btn:hover {
-    box-shadow: 0px 4px 8px rgb(45 35 66 / 40%), 0px 7px 13px -3px rgb(45 35 66 / 30%), inset 0px -3px 0px #d6d6e7;
-    transform: translateY(-2px);
-}
-
-.bts:active{
-    box-shadow: inset 0px 3px 7px #d6d6e7;
-    transform: translateY(2px);
 }
 
 
