@@ -124,7 +124,7 @@ ul li a:hover{
 
 .hero-section {
 position: relative;
-width: 100vw; 
+width: 100%; 
 height: 100vh; 
 overflow: hidden;
 }
@@ -206,10 +206,24 @@ margin: 0 auto; /* Add auto margin to center horizontally */
 }
 
 .container2 {
-width: 70%; /* Set the desired width for the container */
-margin: 20px 0; /* Center the container and add some top margin */
-background-color: #0C0A1C;
+width: 70%; 
+margin: 20px 0; 
+background-color: #0B0A11;
 padding: 2rem;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.calculator {
+  border: 1px;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+
+.resistor {
+  width: 300px;
 }
 
 
@@ -220,7 +234,7 @@ padding: 2rem;
   padding: 10px; /* Adjusted padding */
   border-radius: 12px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-  width: 60%; /* Make it 100% width of the container */
+  width: 100%; /* Make it 100% width of the container */
   margin: 0;
 }
 
@@ -401,6 +415,41 @@ display: block;
 background-color: #3e8e41;
 }
 
+.Result{
+  background-color: #FFFFFF;
+  border: 0;
+  border-radius: .5rem;
+  box-sizing: border-box;
+  color: #111827;
+  font-size: .875rem;
+  font-weight: 600;
+  line-height: 1.25rem;
+  padding: .75rem 1rem;
+  text-align: center;
+  text-decoration: none #D1D5DB solid;
+  text-decoration-thickness: auto;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 200px;
+
+}
+
+.Result::hover {
+  background-color: rgb(249,250,251);
+}
+
+.Result:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.Result:focus-visible {
+  box-shadow: none;
+}
+
 
 .form h2{
   width: 220px;
@@ -499,7 +548,8 @@ color: #ffffff; /* Set text color for the entire page */
 .header-container {
 background-color: #1B0B03;
 color: #ffffff;
-padding: 0px;
+padding: 0px 10px;
+width: 100%;
 }
 
 h1 {
@@ -534,21 +584,38 @@ a:hover {
 text-decoration: underline;
 }
 
+.onyx {
+  width: 90%;
+  margin: 0;
+  position: center;
+}
   
-.title-contributor {
-  width: 100%;
+.title-contributor img {
   height: auto;
-  margin: auto;
-  text-align: center;
+  max-width: 330%
+  margin: center;
 }
 
-.title-contributor img {
-  width: 100%;
-  height: auto;
-  max-width: 100%;
-  object-fit: cover;
-  object-position: center;
+.Contributer-a,
+.Contributer-b {
+    max-width: 100%;
+    height: 100vh; /* 100% of the viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center center;
+    background-size: cover;
+    overflow: hidden;
 }
+
+.Contributer-a img,
+.Contributer-b img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
 
 a {
   color: #007bff;
