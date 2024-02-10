@@ -593,26 +593,32 @@ text-decoration: underline;
 .title-contributor img {
   height: auto;
   max-width: 330%
-  margin: center;
-}
+  margin; center
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+  }
 
 .Contributer-a,
 .Contributer-b {
     max-width: 100%;
-    height: 100vh; /* 100% of the viewport height */
+    height: 0px; /* 100% of the viewport height */
     display: flex;
-    justify-content: center;
-    align-items: center;
-    background-position: center center;
+    justify-content: left;
+    align-items: left;
+    background-position: left;
     background-size: cover;
     overflow: hidden;
 }
 
 .Contributer-a img,
 .Contributer-b img {
-    width: 100%;
-    height: auto;
-    display: block;
+    width: 200%;
+    height: 9px;
 }
 
 
