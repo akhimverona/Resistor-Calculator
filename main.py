@@ -38,6 +38,8 @@ def calculate_resistance(bands, num_bands):
 
         if None in digit_values:
             resistance = None
+        elif num_bands == 3:
+            resistance = digit_values[0] * 10 ** digit_values[1]
         elif num_bands == 4:
             resistance = (digit_values[0] * 10 + digit_values[1]) * 10 ** digit_values[2]
         elif num_bands == 5:
