@@ -1,5 +1,9 @@
-[Main.py](http://Main.py) - https://codeshare.io/ApdK78
+Main.py - https://codeshare.io/ApdK78
 
-[Function.py](http://Function.py) - https://codeshare.io/1VYqNX
+Function.py - https://codeshare.io/1VYqNX
 
-[calculator.py](http://calculator.py) - https://codeshare.io/pAq6J0
+calculator.py  - https://codeshare.io/pAq6J0
+
+HTML - https://codeshare.io/DAZApk
+
+CSS - https://codeshare.io/g8L8vB
